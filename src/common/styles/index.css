@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@utility u-pad-md {
+  @apply u-pad-x-md u-pad-y-md;
+}
+@utility u-pad-x-md {
+  @apply px-4;
+}
+@utility u-pad-y-md {
+  @apply py-2.5;
+}
+@utility u-pad-xl {
+  @apply px-8 py-6;
+}
+
+@theme inline {
+  --color-background: var(--color-slate-100);
+  --color-foreground: var(--color-slate-900);
+  --color-muted: var(--color-slate-200);
+  --color-muted-foreground: var(--color-slate-600);
+  --color-border: var(--color-slate-300);
+  --color-primary-foreground: var(--color-white);
+  --color-primary: hsl(215, 45%, 27%);
+
+  --color-ring: var(--color-sky-700);
+  --radius-md: 6px;
+}
+
+@layer base {
+  :root {
+    * {
+      @apply border-border;
+    }
+  }
+}

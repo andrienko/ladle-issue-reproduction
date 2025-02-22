@@ -1,0 +1,10 @@
+@import '../common/styles/index.css';
+
+@layer base {
+  :root {
+    @apply bg-background text-foreground;
+  }
+  body {
+    @apply u-pad-xl;
+  }
+}

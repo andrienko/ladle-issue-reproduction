@@ -1,0 +1,30 @@
+@import '../src/common/styles/index.css';
+
+/* Note how in this very file tailwind works perfectly, even the utils. */
+
+.ladle-main {
+  @apply bg-background u-pad-xl;
+}
+
+.ladle-aside {
+  @apply u-pad-xl bg-muted text-sm;
+  input {
+    @apply rounded-md border-border border shadow-inner p-4 text-foreground;
+  }
+  ul {
+    margin-inline-start: 14px;
+  }
+}
+.ladle-resize-handle {
+  @apply shadow-none w-1;
+}
+
+.ladle-addons {
+  ul li {
+    @apply rounded-sm shadow-none bg-slate-300 text-foreground size-8;
+  }
+}
+
+@utility ladle-center {
+  @apply flex items-center justify-center bg-white m-10 gap-2 w-full;
+}
